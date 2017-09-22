@@ -24,7 +24,7 @@ class Examples
         return \ReturnDataFormat\Response::success()->message('Data saved successfully!')
                                                      ->data($data)
                                                      ->apiKey($apiKey);
-                                                     // Anything you can add here will be i
+                                                     // Anything you can add here will be in array 
     }
 }
 
@@ -67,6 +67,15 @@ a:4:{s:6:"result";b:1;s:7:"message";s:24:"Data saved successfully!";s:4:"data";a
 ```
 
 So there is not limitation to add index to array, whenever you want anything you can just add  \ReturnDataFormat\Response::success()->ANY_INDEX(ASSIGN_DATA)->ANY_INDEX(ASSIGN_DATA) .. .. So it very flexiblie to use in any kind of function. 
+
+## Installation 
+```
+php composer.phar sarphp/return-data-format
+
+OR 
+
+composer require sarphp/return-data-format
+```
 
 
 
