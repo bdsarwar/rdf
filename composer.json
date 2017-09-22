@@ -1,11 +1,12 @@
 {
-  "name": "bdsarwar/RetturnDataFormat",
+  "name": "bdsarwar/ReturnDataFormat",
   "description" : "PHP Return Data Format - This used to making good format of return data for web application",
   "keywords": ["php", "return data"],
   "authors": [
         {
             "name": "Sarwar Hossain",
-            "email": "bdsarwar@gmail.com"
+            "email": "bdsarwar@gmail.com",
+            "homepage": "http://sarwar.me"
         }
     ],
   "require": {
@@ -15,6 +16,6 @@
       "phpunit/phpunit" : "^5.7"
   },
   "autoload": {
-        "psr-4": { "RetturnDataFormat\\": "src/" }
+        "psr-4": { "ReturnDataFormat\\": "src/" }
     }
 }

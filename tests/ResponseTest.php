@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use RetturnDataFormat\Response;
+use ReturnDataFormat\Response;
 
 class ResponseTest extends TestCase{
 	

@@ -21,7 +21,7 @@ class Examples
         ];
         $apiKey = "Aie73v88G7&#*VDASDFUEBasdfaf"; 
         
-        return \RetturnDataFormat\Response::success()->message('Data saved successfully!')
+        return \ReturnDataFormat\Response::success()->message('Data saved successfully!')
                                                      ->data($data)
                                                      ->apiKey($apiKey);                                                     
         

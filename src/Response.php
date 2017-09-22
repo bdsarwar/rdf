@@ -12,7 +12,7 @@
  * @version 1.0.0
  * 
  */
-namespace RetturnDataFormat;
+namespace ReturnDataFormat;
 
 require_once 'config.php';
 
@@ -21,7 +21,7 @@ require_once 'config.php';
  * Response Class The follwoign way we used this calss
  * Usages: in caase of success 
  * $data = ['banana', 'apple'], $key = 24419;
- * $response = \RetturnDataFormat\Response::success()->data($data)->key($key)->message('Saved successfully')->toArray();
+ * $response = \ReturnDataFormat\Response::success()->data($data)->key($key)->message('Saved successfully')->toArray();
  * print_r($response); // The following output will be showing
  * [
  *  'result' => true, 
@@ -54,7 +54,7 @@ class Response
 
     /**
      * Static methond used to load the object of Response class and it will use Response::success()-> ... ... 
-     * @return \RetturnDataFormat\Response Object of Response Class after setting ture value on its result class 
+     * @return \ReturnDataFormat\Response Object of Response Class after setting ture value on its result class 
      * 
      */
     public static function success(){
@@ -63,7 +63,7 @@ class Response
     
     /**
      * Static methond used to load the object of Response class and it will use Response::failed()-> ... ... 
-     * @return \RetturnDataFormat\Response
+     * @return \ReturnDataFormat\Response
      */
     public static function failed(){
         return new Response(false); 
@@ -72,10 +72,10 @@ class Response
     /**
      * This methond used to set custom message on your returnd data set. 
      * 
-     * Usage: \RetturnDataFormat\Response::success()->message('Success message'); 
+     * Usage: \ReturnDataFormat\Response::success()->message('Success message'); 
      * 
      * @param type $msg
-     * @return \RetturnDataFormat\Response Response Object 
+     * @return \ReturnDataFormat\Response Response Object 
      */
     public function message($msg = null){        
         $this->_RETURN[RDF_MESSAGE] = $msg; 
@@ -85,7 +85,7 @@ class Response
     /**
      * Magic method for indexing the return data array
      *
-     * For example: \RetturnDataFormat\Response::success()->data($data)->key($key) would give you the folowing array in response 
+     * For example: \ReturnDataFormat\Response::success()->data($data)->key($key) would give you the folowing array in response 
      * if it response as toArray()
      *  [
      *      'data' => $data
@@ -97,8 +97,8 @@ class Response
      * Note the methond name is always the key and parameter is the value 
      *
      * @param string $name metond name which will use as key of return array 
-     * @param array $args Parameters to pass when calling \RetturnDataFormat\Response::success()->data($data).
-     * @return \RetturnDataFormat\Response Response object 
+     * @param array $args Parameters to pass when calling \ReturnDataFormat\Response::success()->data($data).
+     * @return \ReturnDataFormat\Response Response object 
      * @throws \Exception If missing parament/arg.
      */    
     public function __call($name, $args) {
