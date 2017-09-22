@@ -1,22 +1,25 @@
 {
-  "name": "sarphp/return-data-format",
-  "version" : "0.1.0",
-  "description" : "PHP Return Data Format - This used to making good format of return data for web application",
-  "keywords": ["php", "return data"],
-  "authors": [
-        {
-            "name": "Sarwar Hossain",
-            "email": "bdsarwar@gmail.com",
-            "homepage": "http://sarwar.me"
-        }
-    ],
-  "require": {
-      "php": ">=5.5.9"
-  },
-  "require-dev":{
-      "phpunit/phpunit" : "^5.7"
-  },
-  "autoload": {
+    "name": "sarphp/return-data-format",
+    "version" : "0.1.0",
+    "description" : "PHP Return Data Format - This used to making good format of return data for web application",
+    "keywords": ["php", "return data"],
+    "type": "library",
+    "authors": [
+          {
+              "name": "Sarwar Hossain",
+              "email": "bdsarwar@gmail.com",
+              "homepage": "http://sarwar.me"
+          }
+      ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev":{
+        "phpunit/phpunit" : "^5.7"
+    },
+    "autoload": {
         "psr-4": { "ReturnDataFormat\\": "src/" }
-    }
+    },
+    "minimum-stability": "stable",
+    "license" : "MIT"
 }
