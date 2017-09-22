@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use RDF\Response;
+use RetturnDataFormat\Response;
 
 class ResponseTest extends TestCase{
 	
