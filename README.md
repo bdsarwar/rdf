@@ -1,6 +1,6 @@
 # rdf - PHP Return Data Format 
 
-This is a php package, It help to format return data of any kind of methond. If anywone need return data with some specific format, they can use it. 
+This php package help to format return data of any kind of methond. If anyone need to return data with some specific(Array, Json, Serialize) format, they can use it. 
 
 ## Example 
 ```php
@@ -66,7 +66,7 @@ Array
 a:4:{s:6:"result";b:1;s:7:"message";s:24:"Data saved successfully!";s:4:"data";a:2:{i:0;a:2:{s:2:"id";i:1;s:4:"name";s:5:"Jon D";}i:1;a:2:{s:2:"id";i:2;s:4:"name";s:8:"Michel N";}}s:6:"apiKey";s:3:"Aie";}
 ```
 
-So there is not limitation to add index to array, whenever you want anything you can just add  \ReturnDataFormat\Response::success()->ANY_INDEX(ASSIGN_DATA)->ANY_INDEX(ASSIGN_DATA) .. .. So it very flexiblie to use in any kind of function. 
+So there is not limitation to add index to array, whenever you want anything you can just add  \ReturnDataFormat\Response::success()->ANY_INDEX(ASSIGN_DATA)->ANY_INDEX(ASSIGN_DATA) .. .. So it very flexiblie to use in any kind of functions. 
 
 ## Installation 
 ```
